@@ -1,0 +1,9 @@
+[profile.default]
+src = "sandbox"
+out = "out"
+libs = ["node_modules", "lib"]
+remappings = [
+  "drosera-contracts/=node_modules/drosera-contracts/src/",
+  "forge-std/=lib/forge-std/src/",
+  "openzeppelin/=lib/openzeppelin-contracts/"
+]

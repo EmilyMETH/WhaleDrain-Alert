@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import {ERC20Mock} from "openzeppelin/mocks/ERC20Mock.sol";
+import {ERC20Mock} from "openzeppelin/contracts/mocks/token/ERC20Mock.sol";
 
 contract MockBridge {
     address public receiptToken;
