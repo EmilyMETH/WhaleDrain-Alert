@@ -24,9 +24,7 @@ contract WhaleAlertTrap is ITrap {
         uint256 diff = lastBalance > currentBalance
             ? lastBalance - currentBalance
             : currentBalance - lastBalance;
-
         bool whaleMoved = diff >= whaleThreshold;
-
         return abi.encode(currentBalance, whaleMoved);
     }
 
