@@ -3,12 +3,12 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 import "../sandbox/WhaleAlertTrap.sol";
-import "./MockERC20.sol"; 
+import "./MockERC20.sol";
 
 contract WhaleAlertTrapTest is Test {
     WhaleAlertTrap trap;
     MockERC20 token;
-    address wallet = address(0x123); 
+    address wallet = address(0x123);
 
     function setUp() public {
         token = new MockERC20("MockToken", "MTK");

@@ -1,5 +1,5 @@
 [profile.default]
-src = "sandbox"
+src = "src"
 test = "test"
 out = "out"
 libs = ["lib", "node_modules"]
@@ -9,3 +9,5 @@ remappings = [
   "forge-std/=lib/forge-std/src/",
   "openzeppelin/=lib/openzeppelin-contracts/contracts/"
 ]
+[rpc_endpoints]
+holesky = "https://eth-holesky.g.alchemy.com/v2/IhNeUYnxfqB4JPFPCoEPN6HbP12GZiAw"
