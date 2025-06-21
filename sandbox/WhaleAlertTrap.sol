@@ -2,10 +2,7 @@
 pragma solidity ^0.8.13;
 
 import {ITrap} from "drosera-contracts/interfaces/ITrap.sol";
-
-interface IERC20 {
-    function balanceOf(address account) external view returns (uint256);
-}
+import "openzeppelin/token/ERC20/IERC20.sol";
 
 contract WhaleAlertTrap is ITrap {
     address public targetWallet;
