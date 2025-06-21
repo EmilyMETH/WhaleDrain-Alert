@@ -2,7 +2,8 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "./WhaleAlertTrap.sol";
+import {WhaleAlertTrap} from "./WhaleAlertTrap.sol";
+import {ITrap} from "drosera-contracts/interfaces/ITrap.sol";
 
 contract ERC20Mock {
     mapping(address => uint256) public balances;
